@@ -1,0 +1,17 @@
+name: Jira Integration
+
+on:
+  pull_request:
+    types: [opened, edited, synchronize]
+
+permissions:
+  statuses: write
+  pull-requests: write
+  issues: write
+
+jobs:
+  example:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: map-colonies/javascript-github-actions/actions/jira-pull-request-integration@jira-integration
