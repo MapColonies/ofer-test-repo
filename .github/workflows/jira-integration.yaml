@@ -14,4 +14,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: map-colonies/javascript-github-actions/actions/jira-pull-request-integration@jira-integration
+      - uses: mapcolonies/javascript-github-actions/actions/jira-pull-request-integration@jira-integration
